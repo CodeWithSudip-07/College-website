@@ -222,9 +222,7 @@
      background-image: url('images5/carosel\ \(3\).jpg');
      background-size: 100% 100%;
      animation: changeimage 40s ease-in-out 5s infinite;
-     animation: name duration timing-function delay iteration-count direction fill-mode;
-
- }
+}
  @keyframes changeimage {
      0%{
           background-image: url('images5/carosel\ \(3\).jpg');
@@ -431,8 +429,8 @@
      height:250px;
      width:100%;
 }
- .governor-section{
-}
+ /* .governor-section{
+} */
  .governor-img{
      width:100%;
 }
@@ -553,3 +551,340 @@
      text-align:center;
 }
 /********** Footer Copyright Ends **********/
+
+/************ Responsive Meta HTML Starts ***********/
+/* Extra large devices (Desktops, ≥1200px) */
+@media (max-width: 1200px) {
+  .container {
+    width: 95%;
+  }
+
+  .text h1 {
+    font-size: 26px;
+  }
+
+  .main-menu a {
+    font-size: 18px;
+  }
+}
+
+/* Large devices (Laptops, ≤992px) */
+@media (max-width: 992px) {
+  .container {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  .text h1 {
+    font-size: 22px;
+  }
+
+  .main-menu {
+    float: none;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .main-menu li {
+    float: none;
+    display: inline-block;
+    padding: 10px 8px;
+  }
+
+  .imgslides {
+    height: 400px;
+    background-size: cover;
+  }
+
+  .search-box input {
+    width: 100px;
+  }
+
+  .right {
+    justify-content: center;
+  }
+
+  .btn {
+    font-size: 14px;
+  }
+}
+
+/* Medium devices (Tablets, ≤768px) */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .left {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .text h1 {
+    font-size: 20px;
+    text-align: left;
+  }
+
+  .right {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    margin-top: 10px;
+  }
+
+  .btn {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .search-box {
+    width: 100%;
+  }
+
+  .search-box input {
+    width: 70%;
+  }
+
+  .search-box button {
+    width: 30%;
+  }
+
+  .imgslides {
+    height: 300px;
+  }
+}
+
+/* Small devices (Phones, ≤576px) */
+@media (max-width: 576px) {
+  .top-header .headquote {
+    font-size: 14px;
+  }
+
+  .text h1 {
+    font-size: 18px;
+  }
+
+  .naac, .affiliated {
+    font-size: 14px;
+  }
+
+  .main-menu a {
+    font-size: 16px;
+  }
+
+  .main-menu li {
+    padding: 8px 6px;
+  }
+
+  .imgslides {
+    height: 200px;
+  }
+
+  .logo {
+    height: 60px;
+  }
+
+  .btn {
+    font-size: 13px;
+  }
+
+  .search-box input {
+    width: 65%;
+  }
+
+  .search-box button {
+    width: 35%;
+  }
+}
+/********** Responsive Slider HTML Ends ***********/
+/************ Responsive Latest News, Event, Notice Board Starts **********/
+/* Default box-sizing for all */
+* {
+  box-sizing: border-box;
+}
+
+/* Small devices (phones) */
+@media (max-width: 600px) {
+  .container, .width-100 {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .width-33, .width-25, .width-40, .width-60 {
+    width: 100%;
+    float: none;
+    margin-bottom: 20px;
+  }
+
+  .dashboard {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+
+  .gallery-img {
+    height: auto;
+  }
+
+  .event-date {
+    width: 40px;
+    font-size: 12px;
+  }
+
+  .governor-img {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .recruiter-marquee img {
+    width: 120px;
+    height: auto;
+  }
+}
+
+/* Medium devices (tablets) */
+@media (min-width: 601px) and (max-width: 992px) {
+  .width-33 {
+    width: 50%;
+    float: left;
+    margin-bottom: 20px;
+  }
+
+  .width-25 {
+    width: 50%;
+    float: left;
+    margin-bottom: 15px;
+  }
+
+  .width-40, .width-60 {
+    width: 100%;
+    float: none;
+    margin-bottom: 15px;
+  }
+
+  .dashboard {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .gallery-img {
+    height: auto;
+  }
+
+  .recruiter-marquee img {
+    width: 140px;
+    height: auto;
+  }
+}
+
+/* Large devices (small desktops, laptops) */
+@media (min-width: 993px) and (max-width: 1200px) {
+  .width-33 {
+    width: 33.33%;
+    float: left;
+  }
+
+  .width-25 {
+    width: 25%;
+    float: left;
+  }
+
+  .dashboard {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Extra-large devices (large desktops) */
+@media (min-width: 1201px) {
+  .width-33 {
+    width: 33.33%;
+    float: left;
+  }
+
+  .width-25 {
+    width: 25%;
+    float: left;
+  }
+
+  .dashboard {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+/************** Responsive Recruiter List HTML Ends **************/
+/******** Responsive Footer HTML Starts ************/
+@media (max-width: 1024px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .width-25 {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .width-25 {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .social-media li {
+        padding: 0px 5px;
+    }
+
+    .social-media li a img {
+        width: 25px;
+    }
+
+    .footer {
+        padding: 30px 15px;
+    }
+
+    .quicklink-heading {
+        font-size: 16px;
+    }
+
+    .quicklink-menu li a,
+    .get-in-touch li,
+    .footer-e-mail,
+    .footer2-content {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer2-content {
+        padding: 0 10px;
+        font-size: 13px;
+    }
+
+    .get-in-touch li {
+        font-size: 13px;
+    }
+
+    .footer-e-mail {
+        display: inline-block;
+        margin-top: 5px;
+        font-size: 13px;
+    }
+
+    .footer {
+        padding: 20px 10px;
+    }
+
+    .social-media {
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .social-media li {
+        float: none;
+        display: inline-block;
+        margin-bottom: 5px;
+    }
+
+    .social-media li a img {
+        width: 22px;
+    }
+}
+/******** Responsive Footer Copyright HTML Ends *********/
