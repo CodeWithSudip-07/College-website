@@ -85,12 +85,7 @@
      width:80%;
 }
 /********** Top Header Ends **********/
-/* body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f9f9f9;
-} */
-
+/****bangabasi college navbar *****/
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -194,6 +189,7 @@
   padding: 6px 10px;
   cursor: pointer;
 }
+/****bangabasi college navbar *****/
 /********** Logo And Menu Starts **********/  
 .header-menu {
      position: relative;
@@ -220,11 +216,7 @@
 }
 /********** Logo And Menu Ends **********/
 /********** Slider Starts **********/  
-/* .slider-width{
-     width:100%;
-     height: auto;
-} */
- .imgslides{
+.imgslides{
      width: 100%;
      height: 600px;
      background-image: url('images5/carosel\ \(3\).jpg');
@@ -386,6 +378,7 @@
      font-weight:bold;
 }
 /********** Information Ends **********/
+/********** Dashboard Starts **********/
 .dashboard {
   max-width: 1200px;
   margin: 40px auto;
@@ -432,6 +425,7 @@
   transform: scale(1.05);
   cursor: pointer;
 }
+/********** Dashboard Ends **********/
 /********** Gallery Starts **********/  
 .gallery-img{
      height:250px;
